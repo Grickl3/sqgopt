@@ -7,10 +7,21 @@ const sqgopt = function() {
 
 const sqgoptSetTrigger = function() {
 	ctaBox = sqgOptCTABox.getBoundingClientRect();
-	sqgOptTrigger.style.marginTop = ctaBox.top + "px";
+	sqgOptTrigger1.style.marginTop = ctaBox.top + "px";
 	sqgOptPostTrigger.style.marginTop = "-" + ctaBox.top + "px";
-	// console.log(sqgOptPostTrigger.style.marginTop);
-}
+};
+
+// const sqgoptSetModal = function() {
+// 	sqgOptTrigger.addEventListener("click", function {
+// 		sqgOptModal.classList.remove("hidden");
+// 	});
+// 	sqgOptCloseX.addEventListener("click", function {
+// 		sqgOptModal.classList.add("hidden");
+// 	});
+// 	sqgOptScreen.addEventListener("click", function {
+// 		sqgOptModal.classList.add("hidden");
+// 	});
+// }
 
 const sqgoptFindCTA = function() {
 
