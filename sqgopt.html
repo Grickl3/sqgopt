@@ -12,6 +12,15 @@
 </head>
 <body>
 
+	<nav>
+		<div class="nav__stuff">
+			<span class="nav__home nav__link-text">HOME</span>
+			<div class="nav__pages">
+				<span class="nav__link-text">ABOUT</span>
+				<span class="nav__link-text">CONTACT</span>
+			</div><!-- NAV PAGES -->
+		</div><!-- NAV STUFF -->
+	</nav>
 	<img class="hero-img" src="friendlier.jpg" alt="neighbors shaking hands across a fence">
 
 	<div class="header-box">
@@ -19,9 +28,33 @@
 		<p>Web developers have nearly universally accepted a cynical and mysanthropic patten in embracing the involuntary pop-up as a means of permission asset gathering. In producing sqg-opt, I hope to demonstrate that this pattern can be challenged with superior design thinking to the end that site guests will feel more respected and — I believe — be more generous with their granting of permission assets.</p>
 	</div><!-- HEADER BOX -->
 
+	<div id="sqgopt-cta-box" class="sqgopt__cta-box">
+		<span class="sqgopt__cta-copy">Hi, gimmie your email address.</span>
+		<div class="small-space"></div>
+		<img class="sqgopt__email-icon" src="email.svg" alt="email opt in">
+	</div><!-- SQGOPT CTA -->
+
+	<div class="body-text">
+		<script src="https://verbingnounssincewhen.com/p/6"></script>
+	</div><!-- BODY TEXT -->
+
+	<div id="sqgopt-trigger-box" class="sqgopt__trigger-box">
+		<img class="sqgopt__email-icon" src="email.svg" alt="email opt in">
+	</div><!-- SQGOPT TRIGGER -->
+
+	<div class="large-space"></div>
+
+	<footer></footer>
+
 	<script type="text/javascript">
 		
+		let sqgOptCTABox = document.getElementById("sqgopt-cta-box");
+
 		sqgopt();
+
+		window.addEventListener('scroll',function() {
+			findCTA()
+		});
 
 	</script>
 

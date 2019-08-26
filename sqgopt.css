@@ -1,26 +1,103 @@
 /* 
 	font-family: 'Cormorant', Garamond, serif;
 	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, sans-serif;
-*/
+*/ 
 
-body {
-	margin: -5px;
-}
+body { margin: -5px; }
 
-h1 {
-	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, sans-serif;
-	font-weight: 900;
-	color: #1a2744;
-	font-size: 3.5rem;
-}
+/* ============================ NAV ====================== */
 
-p {
-	font-family: 'Cormorant', Garamond, serif;
-	font-weight: 400;
-	color: #151c24;
-	font-size: 1.5rem;
-	line-height: 2.25rem;
-}
+	nav {
+		width: 100vw;
+		background-color: #2f1f3f;
+		border-bottom: 2px solid white;
+		padding: 10px 0;
+	}
+
+	.nav__stuff {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		padding: 0 50px;
+		/*border: 1px solid gold;*/
+
+	}
+	.nav__home {}
+
+	.nav__link-text {		
+		font-family: 'Montserrat', 'Helvetica Neue', Helvetica, sans-serif;
+		color: white;
+		font-size: 1.6rem;
+		font-weight: 300;
+
+		margin: 0 30px;
+		/*border: 1px solid gold;*/
+	}
+	.nav__link-text:hover { color: #656e82; cursor: pointer;}
+
+/* ============================ NAV ====================== */
+
+/* ============================ SQGOPT =================== */
+
+	.sqgopt__cta-box {
+		padding: 20px;
+		background-color: #985617;
+		text-align: center;
+	}
+
+	.sqgopt__cta-copy {
+		font-family: 'Montserrat', 'Helvetica Neue', Helvetica, sans-serif;
+		font-weight: 300;
+		color: #ffffff;
+		font-size: 1.5rem;
+	}
+
+	.sqgopt__trigger-box {
+		position: fixed;
+		top: 50vh;
+		right: 0;
+		padding: 10px;
+
+		height: 30px;
+		width: 50px;
+		background-color: #985617;
+		border-bottom-left-radius: 15px;
+		border-top-left-radius: 15px;
+	}
+
+	.sqgopt__email-icon {
+		width: 40px;
+	}
+
+/* ============================ SQGOPT =================== */
+
+/* ============================ TYPOGRAPHY =============== */
+
+	h1 {
+		font-family: 'Montserrat', 'Helvetica Neue', Helvetica, sans-serif;
+		font-weight: 900;
+		color: #1a2744;
+		font-size: 3.5rem;
+	}
+
+	p {
+		max-width: 38rem;
+
+		font-family: 'Cormorant', Garamond, serif;
+		font-weight: 400;
+		color: #151c24;
+		font-size: 1.5rem;
+		line-height: 2.25rem;
+	}
+
+	.body-text p {
+		margin-left: 50%;
+		transform: translateX(-50%);
+	}
+
+/* ============================ TYPOGRAPHY =============== */
+
 
 .hero-img {
 	margin-left: 50%;
@@ -35,3 +112,24 @@ p {
 	max-width: 50%;
 	background-color: rgba(255,255,255,.8);
 }
+
+/* ============================ LAYOUT GENERAL =========== */
+
+	.small-space {
+		width: 10px;
+		height: 30px;
+	}
+
+	.large-space {
+		width: 10px;
+		height: 300px;
+	}
+
+/* ============================ LAYOUT GENERAL =========== */
+
+footer {
+	width: 100vw;
+	height: 250px;
+	background-color: #656e82;
+}
+
