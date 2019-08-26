@@ -136,9 +136,22 @@ body { margin: -5px; }
 
 /* ============================ LAYOUT GENERAL =========== */
 
-footer {
-	width: 100vw;
-	height: 250px;
-	background-color: #656e82;
-}
+/* ============================ FOOTER =================== */
+	footer {
+		display: flex;
+		justify-content: center;
+		/*align-content: center;*/
+
+		width: 100vw;
+		height: 250px;
+		background-color: #656e82;
+	}
+
+	.sqglz-logo {
+		margin-top: 95px;
+		height: 60px;
+		/*width:  30px;*/
+	}
+
+/* ============================ FOOTER =================== */
 
