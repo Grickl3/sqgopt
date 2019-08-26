@@ -29,22 +29,21 @@
 	</div><!-- HEADER BOX -->
 
 	<div id="sqgopt-cta-box" class="sqgopt__cta-box">
-		<span class="sqgopt__cta-copy">Hi, gimmie your email address.</span>
+		<span class="sqgopt__cta-copy">Hi, you're so cool!<br>Could I have your email address?<br>We could go for donuts.</span>
 		<div class="small-space"></div>
 		<img class="sqgopt__email-icon" src="email.svg" alt="email opt in">
 	</div><!-- SQGOPT CTA -->
 
-	<div class="body-text">
-		<script src="https://verbingnounssincewhen.com/p/4"></script>
-	</div><!-- BODY TEXT -->
 
 	<div id="sqgopt-trigger-box" class="sqgopt__trigger-box">
 		<img class="sqgopt__email-icon" src="email.svg" alt="email opt in">
 	</div><!-- SQGOPT TRIGGER -->
 
-	<div class="body-text">
-		<script src="https://verbingnounssincewhen.com/p/4"></script>
-	</div><!-- BODY TEXT -->
+	<div id="sqgopt-post-trigger">
+		<div class="body-text">
+			<script src="https://verbingnounssincewhen.com/p/7"></script>
+		</div><!-- BODY TEXT -->
+	</div><!-- POST TRIGGER -->
 
 	<div class="large-space"></div>
 
@@ -53,11 +52,15 @@
 	<script type="text/javascript">
 		
 		let sqgOptCTABox = document.getElementById("sqgopt-cta-box");
+		let sqgOptTrigger = document.getElementById("sqgopt-trigger-box");
+		let sqgOptPostTrigger = document.getElementById("sqgopt-post-trigger");
 
 		sqgopt();
 
+		sqgoptSetTrigger();
+
 		window.addEventListener('scroll',function() {
-			findCTA()
+			sqgoptFindCTA()
 		});
 
 	</script>

@@ -5,9 +5,15 @@ const sqgopt = function() {
 };
 
 
-const findCTA = function() {
+const sqgoptSetTrigger = function() {
 	ctaBox = sqgOptCTABox.getBoundingClientRect();
+	sqgOptTrigger.style.marginTop = ctaBox.top + "px";
+	sqgOptPostTrigger.style.marginTop = "-" + ctaBox.top + "px";
+	// console.log(sqgOptPostTrigger.style.marginTop);
+}
+
+const sqgoptFindCTA = function() {
+
 	console.log(ctaBox.top);
 
-	
 };
