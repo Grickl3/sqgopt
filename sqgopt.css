@@ -54,9 +54,10 @@ body { margin: -5px; }
 	}
 
 	.sqgopt__trigger-box {
-		position: fixed;
+		position: sticky;
 		top: 50vh;
-		right: 0;
+		margin-left: 100%;
+		transform: translateX(-100%);
 		padding: 10px;
 
 		height: 30px;
