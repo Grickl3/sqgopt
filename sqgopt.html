@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="sqgopt.css">
 	<link href="https://fonts.googleapis.com/css?family=Cormorant:400,400i|Montserrat:300,900&display=swap" rel="stylesheet">
 
-	<script type="text/javascript" src="sqgopt.js"></script>
+	<!-- <script type="text/javascript" src="sqgopt.js"></script> -->
 </head>
 <body>
 
@@ -68,6 +68,8 @@
 
 	<script type="text/javascript">
 		
+		// sqgopt();
+
 		let sqgOptCTABox = document.getElementById("sqgopt-cta-box");
 		let sqgOptTrigger1 = document.getElementById("sqgopt-trigger-box");
 		let sqgOptTrigger2 = document.getElementById("sqgopt-cta-trigger");
@@ -77,7 +79,11 @@
 		let sqgOptScreen = document.getElementById("sqgopt-screen");
 
 
-		sqgopt();
+		const sqgoptSetTrigger = function() {
+			ctaBox = sqgOptCTABox.getBoundingClientRect();
+			sqgOptTrigger1.style.marginTop = ctaBox.top + "px";
+			sqgOptPostTrigger.style.marginTop = "-" + ctaBox.top + "px";
+		};
 
 		sqgoptSetTrigger();
 
